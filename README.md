@@ -1,33 +1,20 @@
-<!--
-👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
+# Xcode Classic Light theme for Nova
 
-Not every extension will need every item described below. Use your best judgement when deciding which parts to keep to provide the best experience for your new users.
+Theme inspired by Xcode's Classic Light theme. Enjoy 😎!
 
-💡 Quick Tip! As you edit this README template, you can preview your changes by selecting **Extensions → Activate Project as Extension**, opening the Extension Library, and selecting "Xcode Classic Light" in the sidebar.
+![Xcode Classic Light for Nova](https://github.com/nerdfromthenorth/xcode-classic-light-nova-theme/raw/main/screenshot.png)
 
-Let's get started!
--->
+## Instructions
 
-<!--
-🎈 To give users an idea of what your theme looks like, it's a great idea to show big, beautiful screenshots of your theme in action:
--->
+1. Go to **Extensions ➞ Extensions Library**. Choose the **Themes** tab and install the theme from here.
+1. Go to **Nova ➞ Preferences**. Choose the **Theme** tab and choose **Xcode Classic Light** to activate the theme.
 
-**Xcode Classic Light** provides a fun, bright palette:
+### Dark variant
 
-![](https://nova.app/images/en/dark/editor.png)
-
-<!--
-🎈 If your extension provides multiple variations, don't forget to show those too!
--->
-
-Xcode Classic Light also offers a lighter alternative:
-
-![](https://nova.app/images/en/light/editor.png)
+Prefer a dark theme? No problem! There is a dark variant of this theme available as well. Install **Xcode Dark** 🌙 from the Extensions Library.
 
 ## Acknowledgements
 
-<!--
-🎈 If your theme is based on existing work by someone else, consider crediting the original author
--->
+Xcode Classic Light is based on _Classic Light theme for Xcode_ by [Apple](https://apple.com).
 
-Xcode Classic Light is based on _Original Xcode Classic Light_ by [Lauren Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum).
+[Nova](https://panic.com/nova) is made by [Panic Inc](https://panic.com).
