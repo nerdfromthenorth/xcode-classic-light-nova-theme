@@ -93,100 +93,101 @@ meta.gutter.selected {
  */
 
 keyword {
-    color: rgb(0, 70, 170);
+    color: hsl(304, 63%, 37%);
+    font-weight: bold;
 }
 comment, declaration {
-    color: rgb(135, 135, 135);
-    font-style: italic;
+    color: hsl(103, 89%, 24%);
 }
 processing {
-    color: rgb(80, 80, 80);
+    color: hsl(21, 52%, 26%);
 }
 
 bracket, operator {
-    color: rgb(0, 112, 248);
+    color: hsla(0, 0%, 0%, 0.85);
 }
 invalid {
-    background-color: red;
+    background-color: hsl(1, 80%, 43%);
 }
 link {
-    color: rgb(218, 10%, 80%);
+    color: hsl(240, 100%, 53%);
 }
 
 /* Values */
 value.boolean, value.null {
-    color: rgb(0, 122, 183);
+    color: hsl(304, 63%, 37%);
+    font-weight: bold;
 }
 value.number {
-    color: rgb(0, 122, 183);
+    color: hsl(248, 100%, 41%);
 }
 value.entity, value.symbol {
-    color: rgb(0, 122, 183);
+    color: hsl(261, 100%, 31%);
 }
 
 /* Identifiers */
 identifier.global, identifier.variable {
-    color: rgb(135, 53, 165);
+    color: hsl(186, 40%, 33%);
 }
 identifier.type {
-    color: rgb(116, 27, 163);
+    color: hsl(203, 83%, 26%);
 }
 identifier.property, identifier.function, identifier.method {
-    color: rgb(63, 110, 125);
+    color: hsl(203, 83%, 34%);
 }
 identifier.key {
-    color: rgb(57, 0, 160);
+    color: hsl(203, 83%, 34%);
 }
 identifier.argument {
-    color: rgb(57, 0, 160);
+    color: hsl(261, 100%, 31%);
 }
 
 /* Strings */
 cdata {
-    color: rgb(187, 37, 0);
+    color: hsl(210, 11%, 47%);
 }
 string, regex {
-    color: rgb(221, 36, 0);
+    color: hsl(1, 80%, 43%);
 }
 string.escaped, regex.escaped {
-    color: rgb(53, 82, 0);
+    color: hsl(21, 52%, 26%);
 }
 string.key {
-    color: rgb(0, 122, 183);
+    color: hsl(203, 83%, 26%);
 }
 string-template {
-    color: rgb(255, 85, 51);
+    color: hsl(21, 52%, 26%);
 }
 string-template.value {
-    color: rgb(255, 128, 102);
+    color: hsl(21, 52%, 26%);
 }
 
 /* Markup */
 markup.heading {
-    color: rgb(0, 70, 170);
+    color: hsl(44, 95%, 26%);
 }
 markup.line {
-    color: hsl(60, 43%, 56%);
+    color: hsl(248, 100%, 41%);
 }
 markup.bold {
-    color: rgb(93, 143, 0);
+    color: hsl(203, 83%, 34%);
     font-weight: bold;
 }
 markup.italic {
-    color: rgb(222, 122, 49);
+    color: hsl(186, 40%, 33%);
     font-style: italic;
 }
 markup.strikethrough {
-    color: rgb(221, 36, 0);
+    color: hsl(1, 80%, 43%);
 }
 markup.list.item {
-    color: rgb(0, 70, 170);
+    color: hsl(44, 95%, 26%);
 }
 markup.code {
     background-color: rgba(128, 128, 128, 0.2);
 }
 markup.link {
-    color: rgb(0, 122, 183);
+    color: hsl(224, 100%, 66%);
 }
 
 /* Types */
@@ -196,66 +197,65 @@ definition.package package.name,
 definition.enum enum.name,
 definition.union union.name,
 definition.struct struct.name {
-    font-weight: bold;
-    color: rgb(116, 27, 163);
+    color: hsl(203, 83%, 26%);
 }
 
 /* Members */
 definition.property property.name,
 definition.function function.name,
 definition.method method.name {
-    color: rgb(63, 110, 125);
+    color: hsl(203, 83%, 34%);
 }
 
 /* Tags */
 tag {
-    color: rgb(0, 70, 170);
+    color: hsl(203, 83%, 34%);
 }
 tag.framework {
-    color: rgb(64, 0, 128);
+    color: hsl(21, 52%, 26%);
 }
 tag.attribute.name {
-    color: rgb(0, 122, 183);
+    color: hsl(203, 83%, 26%);
 }
 tag.attribute.value {
-    color: rgb(93, 143, 0);
+    color: hsl(1, 80%, 43%);
 }
 tag.attribute.value.link {
-    color: rgb(0, 76, 203);
+    color: hsl(224, 100%, 66%);
 }
 
 /* Styles */
 style.at {
-    color: rgb(222, 122, 49);
-    font-weight: bold;
+    color: hsl(21, 52%, 26%);
 }
 style.selector.element {
     font-weight: bold;
 }
 style.selector.identifier.id {
-    color: rgb(0, 70, 170);
+    color: hsl(185, 45%, 20%);
 }
 style.selector.identifier.class {
-    color: rgb(63, 110, 125);
+    color: hsl(185, 45%, 20%);
 }
 style.selector.pseudoclass {
-    color: rgb(116, 27, 163);
+    color: hsl(185, 45%, 20%);
 }
 style.selector.pseudoelement {
-    color: rgb(63, 110, 125);
+    color: hsl(185, 45%, 20%);
 }
 style.attribute.name {
-    color: rgb(0, 70, 170);
+    color: hsl(186, 40%, 33%);
 }
 style.string {
-    color: rgb(224, 55, 143);
+    color: hsl(1, 80%, 43%);
 }
 style.value.number {
-    color: rgb(221, 36, 0);
+    color: hsl(248, 100%, 41%);
 }
 style.value.color.hex {
-    color: rgb(215, 45, 101);
+    color: hsl(248, 100%, 41%);
 }
 style.value.keyword, style.value.color.named {
-    color: rgb(93, 143, 0);
+    color: hsl(304, 63%, 37%);
+    font-weight: bold;
 }
