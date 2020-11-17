@@ -1,6 +1,6 @@
 meta {
-    -theme-display-name: "Dark";
-    -theme-interface-style: dark;
+    -theme-display-name: "Bright";
+    -theme-interface-style: light;
     -theme-vibrancy: vibrant;
     -theme-accent-color: auto;
 }
@@ -10,23 +10,23 @@ meta {
  * Window styles
  */
 meta.window {
-    border-color: hsla(0, 0%, 100%, 0.1);
+    border-color: hsla(0, 0%, 0%, 0.15);
 }
 meta.titlebar {
-    color: hsl(210, 17%, 76%);
-    border-color: hsla(0, 0%, 0%, 0.6);
+    border-color: hsla(0, 0%, 0%, 0.25);
 }
 meta.titlebar.inactive {
 }
 
 meta.button {
-    background: linear-gradient(hsl(210, 5%, 32%), hsl(210, 5%, 25%));
-    border: linear-gradient(hsl(210, 5%, 17%), hsl(210, 5%, 13%));
-    color: white;
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    border: linear-gradient(hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.3));
+    color: black;
 }
 meta.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
-    color: white;
+    background: linear-gradient(hsl(0, 0%, 90%), hsl(0, 0%, 86%));
+    border: linear-gradient(hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.3));
+    color: black;
 }
 meta.button.selected {
     color: white;
@@ -39,69 +39,52 @@ meta.button.disabled {
 }
 
 meta.textfield {
-    background-color: hsl(210, 5%, 13%);
-    border-color: hsl(210, 5%, 23%);
+    background-color: hsb(0, 0%, 0%, 0.35);
+    border-color: hsla(0, 0%, 0%, 0.2);
 }
 meta.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 23%);
+    background-color: white;
+    border-color: hsla(0, 0%, 0%, 0.2);
 }
+
 
 /*
  * Document styles
  */
 meta.document {
-    background-color: hsl(210, 5%, 11%);
-    border-color: hsla(0, 0%, 100%, 0.1);
-}
-
-meta.document.button {
-    background: linear-gradient(hsl(210, 5%, 25%), hsl(210, 5%, 21%));
-    border: linear-gradient(hsl(210, 5%, 11%), hsl(210, 5%, 8%));
-}
-meta.document.button.disabled {
-    background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
-}
-meta.document.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
-}
-
-meta.document.textfield {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
-}
-meta.document.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
+    background-color: white;
 }
 
 /* Text */
 meta.text {
-    color: hsl(210, 49%, 90%);
+    color: black;
 }
 meta.text.invisible {
-    color: hsla(210, 100%, 90%, 0.12);
+    color: rgb(221, 36, 0);
 }
 meta.text.selected {
+}
+meta.text.lookup {
+    color: rgb(221, 36, 0);
 }
 
 /* Cursor */
 meta.cursor {
-    background-color: hsl(210, 5%, 15%);
+    background-color: rgb(255, 255, 230);
 }
 
 /* Indentation Guides */
 meta.indentguide {
-    border-color: hsla(220, 5%, 48%, 0.2);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 /* Gutter */
 meta.gutter {
-    color: hsl(210, 5%, 38%);
+    color: hsl(0, 0%, 60%);
 }
 meta.gutter.selected {
-    background-color: hsl(210, 5%, 10%);
-    color: hsl(210, 17%, 76%);
+    color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0%, 92%);
 }
 
 
@@ -110,119 +93,100 @@ meta.gutter.selected {
  */
 
 keyword {
-    color: hsl(210, 100%, 70%);
+    color: rgb(0, 70, 170);
 }
-comment {
-    color: hsl(210, 11%, 45%);
+comment, declaration {
+    color: rgb(135, 135, 135);
+    font-style: italic;
 }
 processing {
-    color: hsl(210, 11%, 45%);
+    color: rgb(80, 80, 80);
 }
-declaration {
-    color: hsl(210, 11%, 45%);
-}
-bracket {
-    color: hsl(210, 23%, 68%);
-}
-operator {
-    color: hsl(210, 23%, 68%);
+
+bracket, operator {
+    color: rgb(0, 112, 248);
 }
 invalid {
-    background-color: hsl(355, 91%, 57%);
-    color: hsl(60, 33%, 96%);
+    background-color: red;
 }
 link {
-    color: hsl(210, 100%, 70%);
+    color: rgb(218, 10%, 80%);
 }
 
 /* Values */
-value.boolean {
-    color: hsl(210, 100%, 70%);
-}
-value.null {
-    color: hsl(210, 100%, 70%);
+value.boolean, value.null {
+    color: rgb(0, 122, 183);
 }
 value.number {
-    color: hsl(210, 100%, 70%);
+    color: rgb(0, 122, 183);
 }
-value.entity {
-    color: hsl(210, 100%, 70%);
-}
-value.symbol {
-    color: hsl(210, 100%, 70%);
+value.entity, value.symbol {
+    color: rgb(0, 122, 183);
 }
 
 /* Identifiers */
-identifier.type {
-    color: hsl(258, 57%, 70%);
-}
-identifier.constant {
-}
 identifier.global, identifier.variable {
-    color: hsl(268, 100%, 83%);
+    color: rgb(135, 53, 165);
 }
-identifier.property,
-identifier.decorator,
-identifier.function,
-identifier.method {
-    color: hsl(166, 41%, 62%);
+identifier.type {
+    color: rgb(116, 27, 163);
+}
+identifier.property, identifier.function, identifier.method {
+    color: rgb(63, 110, 125);
 }
 identifier.key {
-    color: hsl(268, 100%, 83%);
+    color: rgb(57, 0, 160);
 }
 identifier.argument {
-    color: hsl(268, 100%, 83%);
+    color: rgb(57, 0, 160);
 }
 
 /* Strings */
-string {
-    color: hsl(5, 100%, 68%);
+cdata {
+    color: rgb(187, 37, 0);
+}
+string, regex {
+    color: rgb(221, 36, 0);
+}
+string.escaped, regex.escaped {
+    color: rgb(53, 82, 0);
 }
 string.key {
-    color: hsl(210, 100%, 70%);
+    color: rgb(0, 122, 183);
 }
 string-template {
-    color: hsl(27, 100%, 70%);
+    color: rgb(255, 85, 51);
 }
 string-template.value {
-    color: hsl(27, 100%, 64%);
-}
-regex {
-    color: hsl(40, 100%, 64%);
-}
-regex.escaped {
-    color: hsl(27, 97%, 63%);
-}
-cdata {
-    color: hsl(210, 100%, 70%);
+    color: rgb(255, 128, 102);
 }
 
 /* Markup */
 markup.heading {
-    color: hsl(30, 50%, 60%);
+    color: rgb(0, 70, 170);
 }
 markup.line {
     color: hsl(60, 43%, 56%);
 }
 markup.bold {
-    color: hsl(196, 49%, 53%);
+    color: rgb(93, 143, 0);
     font-weight: bold;
 }
 markup.italic {
-    color: hsl(94, 44%, 64%);
+    color: rgb(222, 122, 49);
     font-style: italic;
 }
 markup.strikethrough {
-    color: hsl(0, 100%, 70%);
+    color: rgb(221, 36, 0);
 }
 markup.list.item {
-    color: hsl(30, 50%, 60%);
+    color: rgb(0, 70, 170);
 }
 markup.code {
     background-color: rgba(128, 128, 128, 0.2);
 }
 markup.link {
-    color: hsl(210, 100%, 70%);
+    color: rgb(0, 122, 183);
 }
 
 /* Types */
@@ -233,68 +197,65 @@ definition.enum enum.name,
 definition.union union.name,
 definition.struct struct.name {
     font-weight: bold;
-    color: hsl(258, 57%, 70%);
+    color: rgb(116, 27, 163);
 }
 
 /* Members */
 definition.property property.name,
 definition.function function.name,
 definition.method method.name {
-    color: hsl(210, 100%, 95%);
+    color: rgb(63, 110, 125);
 }
 
 /* Tags */
 tag {
-    color: hsl(166, 41%, 62%);
+    color: rgb(0, 70, 170);
 }
 tag.framework {
-    color: hsl(258, 57%, 70%);
+    color: rgb(64, 0, 128);
 }
 tag.attribute.name {
-    color: hsl(95, 55%, 60%);
+    color: rgb(0, 122, 183);
 }
 tag.attribute.value {
-    color: hsl(5, 100%, 69%);
+    color: rgb(93, 143, 0);
 }
 tag.attribute.value.link {
-    color: hsl(210, 100%, 70%);
+    color: rgb(0, 76, 203);
 }
 
 /* Styles */
 style.at {
-    color: hsl(25, 100%, 63%);
+    color: rgb(222, 122, 49);
     font-weight: bold;
 }
 style.selector.element {
     font-weight: bold;
 }
 style.selector.identifier.id {
-    color: hsl(166, 41%, 62%);
+    color: rgb(0, 70, 170);
 }
 style.selector.identifier.class {
-    color: hsl(258, 57%, 70%);
+    color: rgb(63, 110, 125);
 }
 style.selector.pseudoclass {
-    color: hsl(258, 57%, 70%);
+    color: rgb(116, 27, 163);
 }
 style.selector.pseudoelement {
-    color: hsl(166, 41%, 62%);
+    color: rgb(63, 110, 125);
 }
 style.attribute.name {
-    color: hsl(148, 29%, 58%);
+    color: rgb(0, 70, 170);
+}
+style.string {
+    color: rgb(224, 55, 143);
 }
 style.value.number {
-    color: hsl(249, 84%, 74%);
+    color: rgb(221, 36, 0);
 }
 style.value.color.hex {
-    color: hsl(249, 84%, 74%);
+    color: rgb(215, 45, 101);
 }
-style.value.keyword {
-    color: hsl(210, 100%, 70%);
-}
-style.value.color.named {
-    color: hsl(210, 100%, 70%);
-}
-style.value.identifier.function {
-    color: hsl(40, 100%, 64%);
+style.value.keyword, style.value.color.named {
+    color: rgb(93, 143, 0);
 }
