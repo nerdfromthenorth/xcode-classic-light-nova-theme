@@ -52,25 +52,25 @@ meta.textfield.highlighted {
  * Document styles
  */
 meta.document {
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* Text */
 meta.text {
-    color: black;
+    color: hsla(0, 0%, 0%, 0.85);
 }
 meta.text.invisible {
-    color: rgb(221, 36, 0);
+    color: hsl(0, 0%, 80%)
 }
 meta.text.selected {
 }
 meta.text.lookup {
-    color: rgb(221, 36, 0);
+    color: hsl(0, 0%, 80%);
 }
 
 /* Cursor */
 meta.cursor {
-    background-color: rgb(255, 255, 230);
+    background-color: hsl(214, 100%, 95%);
 }
 
 /* Indentation Guides */
