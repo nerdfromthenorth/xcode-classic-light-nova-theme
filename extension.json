@@ -2,7 +2,9 @@
     "identifier": "com.nerdfromthenorth.XcodeClassicLight",
     "name": "Xcode Classic Light",
     "organization": "Nerd from the North",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Xcode Classic Light theme for Nova.",
     "version": "1.0",
-    "categories": ["themes"]
+    "categories": ["themes"],
+    "repository": "https://github.com/nerdfromthenorth/xcode-classic-light-nova-theme",
+    "bugs": "https://github.com/nerdfromthenorth/xcode-classic-light-nova-theme/issues"
 }
